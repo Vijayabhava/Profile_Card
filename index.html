@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Card-Sumit Sharma </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  </head>
+  <body>
+    
+      <div>
+         <div class="wave"></div>
+         <div class="wave"></div>
+         <div class="wave"></div>
+      </div>
+    
+    <div class="card">
+      <div class="content">
+        <div class="user"><span class=""></span></div>
+        <header>SUMIT SHARMA</header>
+        <div class="follow-us">Follow on</div>
+        <div class="icons">
+          <a href="https://www.facebook.com/profile.php?id=100092466270366&mibextid=eHce3h" target="_blank"><span class="fab fa-facebook"></span></a>
+          <a href="https://www.linkedin.com/in/sumit-sharma-b29858272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"  target="_blank"><span class="fab fa-linkedin"></span></a>
+          <a href="https://www.instagram.com/sumit_sharma_2403?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><span class="fab fa-instagram"></span></a>
+          <a href="https://github.com/Vijayabhava" target="_blank"><span class="fab fa-github"  ></span></a>
+        </div>
+      </div>
+    </div>
+    <script>
+      $('.card').mouseenter(function(){
+    $(this).css("border-color", "blue"); // Change border color to blue on hover
+});
+
+$('.card').mouseleave(function(){
+    $(this).css("border-color", ""); // Reset border color when mouse leaves
+});
+$('.card').mouseenter(function(){
+    $(this).fadeOut(200).fadeIn(200); // Blink effect on hover
+});
+
+$('.card').mouseenter(function(){
+    $(this).fadeTo(200, 0.5); // Fade to 50% opacity on hover
+});
+
+$('.card').mouseleave(function(){
+    $(this).fadeTo(200, 1); // Fade back to 100% opacity when mouse leaves
+});
+
+    </script>
+
+  </body>
+</html>
